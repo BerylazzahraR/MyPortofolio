@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio | Nama Kamu</title>
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- A. Structure: header berisi logo + nav -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#home" aria-label="Kembali ke beranda">
+          <img class="logo-img" src="logo1.png" alt="Logo Beryl Azzahra R" />
+          <span class="logo-text">Beryl azzahra R</span>
+        </a>
+        <nav class="site-nav" aria-label="Navigasi utama">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- A. Structure: main -->
+    <main id="home">
+      <!-- Hero Section-->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="hero-kicker">My Portofolio</p>
+            <h1 class="hero-title">
+              Hi!, I am <span class="accent">Beryl Azzahra Raffagustifram</span>
+              <br />
+              A web developer passionate about crafting modern, responsive, and efficient websites.
+            </h1>
+            <p class="hero-subtitle">
+              I specialize in building clean layouts using HTML, CSS, and basic JavaScript, with a strong emphasis on usability and performance. I believe great websites should be easy to use, easy to understand, and pleasant to interact with.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">My Projects</a>
+              <a class="btn btn-ghost" href="#contact">Contact Me</a>
+            </div>
+
+            <ul class="hero-meta" aria-label="Highlight singkat">
+              <li>HTML5 Semantic</li>
+              <li>CSS Grid & Flexbox</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+
+          <div class="hero-media">
+            <!-- Boleh ganti gambar ini dengan foto kamu -->
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80"
+              alt="Ilustrasi workspace developer"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section: paragraf deskripsi -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-lead">
+            Saya adalah mahasiswa/pelajar yang sedang mendalami web development. Saya
+            suka membuat tampilan yang bersih, konsisten, dan mudah dibaca. Saat ini
+            saya berlatih membangun website statis menggunakan HTML5 dan CSS3, serta
+            memperkuat kemampuan layout menggunakan Flexbox dan CSS Grid.
+          </p>
+
+          <div class="about-cards">
+            <article class="info-card">
+              <h3>Skill Utama</h3>
+              <p>HTML, CSS, Layouting (Flexbox/Grid), dan basic UI styling.</p>
+            </article>
+
+            <article class="info-card">
+              <h3>Tools</h3>
+              <p>VS Code, Git (dasar), Chrome DevTools.</p>
+            </article>
+
+            <article class="info-card">
+              <h3>Tujuan</h3>
+              <p>Membangun portofolio project yang solid dan siap dipublikasikan.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Grid (Projects/Gallery): minimal 3 item -->
+      <section id="projects" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-desc">
+              Beberapa project latihan yang saya buat untuk meningkatkan skill.
+            </p>
+          </div>
+
+          <div class="grid" role="list">
+            <article class="project-card" role="listitem">
+              <img
+                src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80"
+                alt="Preview project landing page"
+                loading="lazy"
+              />
+              <div class="project-body">
+                <h3>Landing Page Sederhana</h3>
+                <p>
+                  Website satu halaman dengan hero, fitur, dan CTA. Fokus pada layout
+                  Flexbox dan spacing.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">Flexbox</span>
+                </div>
+                <a class="project-link" href="#" aria-label="Buka project 1">Lihat</a>
+              </div>
+            </article>
+
+            <article class="project-card" role="listitem">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80"
+                alt="Preview project portfolio"
+                loading="lazy"
+              />
+              <div class="project-body">
+                <h3>Portfolio Mini</h3>
+                <p>
+                  Template portofolio personal dengan section About dan Gallery.
+                  Menggunakan CSS Grid.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS Grid</span>
+                  <span class="tag">UI</span>
+                </div>
+                <a class="project-link" href="#" aria-label="Buka project 2">Lihat</a>
+              </div>
+            </article>
+
+            <article class="project-card" role="listitem">
+              <img
+                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=900&q=80"
+                alt="Preview project gallery"
+                loading="lazy"
+              />
+              <div class="project-body">
+                <h3>Gallery Produk</h3>
+                <p>
+                  Grid card produk (3+) dengan hover effect dan responsive layout.
+                  Fokus pada konsistensi tipografi.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Grid</span>
+                  <span class="tag">Responsive</span>
+                  <span class="tag">Hover</span>
+                </div>
+                <a class="project-link" href="#" aria-label="Buka project 3">Lihat</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact (opsional, tapi membantu) -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-lead">
+            Kalau ingin kolaborasi atau tanya-tanya, kamu bisa hubungi saya lewat:
+          </p>
+
+          <div class="contact-box">
+            <p><strong>Email:</strong> <a href="mailto:emailkamu@example.com">emailkamu@example.com</a></p>
+            <p><strong>GitHub:</strong> <a href="#" target="_blank" rel="noopener">github.com/username</a></p>
+            <p><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">linkedin.com/in/username</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- A. Structure: footer (copyright + social links) -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year">2025</span> Nama Kamu. All rights reserved.</p>
+
+        <div class="social">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="GitHub">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- (Opsional) JS kecil hanya untuk tahun, tidak mengganggu “statis” -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
