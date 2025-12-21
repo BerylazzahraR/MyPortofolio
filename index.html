@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <!-- A. Structure: header berisi logo + nav -->
+    <!-- A. Structure -->
     <header class="site-header">
       <div class="container header-inner">
         <a class="logo" href="#home" aria-label="Kembali ke beranda">
@@ -80,35 +80,70 @@
             My main focus areas include web development, mobile application development, and Internet of Things (IoT).
           </p>
 
-          <div class="about-cards">
-            <article class="info-card">
-              <h3>Main Skills</h3>
-              <p>Web Development 
-                (HTML, CSS, JavaScript, PHP, Laravel)</p>
-              <p>Mobile Application Development (Flutter, Dart, Kotlin)</p>
-            </article>
+    <div class="about-cards">
+  <!-- Main Skills -->
+  <article class="info-card">
+    <div class="card-head">
+      <span class="icon-badge" aria-hidden="true">
+        <img
+          class="card-icon"
+          src="https://unpkg.com/@tabler/icons@3.36.0/icons/outline/brain.svg"
+          alt=""
+        />
+      </span>
+      <h3>Main Skills</h3>
+    </div>
 
-            <article class="info-card">
-              <h3>Tools</h3>
-              <p>Github, VS Code, Android Studio, MySQL</p>
-            </article>
+    <p>Web Development (HTML, CSS, JavaScript, PHP, Laravel)</p>
+    <p>Mobile Application Development (Flutter, Dart, Kotlin)</p>
+  </article>
 
-            <article class="info-card">
-              <h3>Goal</h3>
-              <p>To continuously improve my technical and professional skills through hands-on experience, 
-                build a strong and well-structured portfolio.</p>
-            </article>
-          </div>
+  <!-- Tools -->
+  <article class="info-card">
+    <div class="card-head">
+      <span class="icon-badge" aria-hidden="true">
+        <img
+          class="card-icon"
+          src="https://unpkg.com/@tabler/icons@3.36.0/icons/outline/tool.svg"
+          alt=""
+        />
+      </span>
+      <h3>Tools</h3>
+    </div>
+
+    <p>GitHub, VS Code, Android Studio, MySQL</p>
+  </article>
+
+  <!-- Goal -->
+  <article class="info-card">
+    <div class="card-head">
+      <span class="icon-badge" aria-hidden="true">
+        <img
+          class="card-icon"
+          src="https://unpkg.com/@tabler/icons@3.36.0/icons/outline/target.svg"
+          alt=""
+        />
+      </span>
+      <h3>Goal</h3>
+    </div>
+
+    <p>
+      To continuously improve my technical and professional skills through hands-on
+      experience, build a strong and well-structured portfolio.
+    </p>
+  </article>
+</div>
+
         </div>
       </section>
 
-      <!-- Grid (Projects/Gallery): minimal 3 item -->
+      <!-- Grid-->
       <section id="projects" class="section alt">
         <div class="container">
           <div class="section-head">
             <h2 class="section-title">Projects</h2>
             <p class="section-desc">
-              Beberapa project latihan yang saya buat untuk meningkatkan skill.
+              Several practice projects that I made to improve my skills Programming
             </p>
           </div>
 
@@ -120,17 +155,17 @@
                 loading="lazy"
               />
               <div class="project-body">
-                <h3>Landing Page Sederhana</h3>
+                <h3>Simple landing page</h3>
                 <p>
-                  Website satu halaman dengan hero, fitur, dan CTA. Fokus pada layout
-                  Flexbox dan spacing.
+                  A one-page website with a hero, features, and a call to action.
+                   Focus on Flexbox layout and spacing.
                 </p>
                 <div class="project-tags">
                   <span class="tag">HTML</span>
                   <span class="tag">CSS</span>
                   <span class="tag">Flexbox</span>
                 </div>
-                <a class="project-link" href="#" aria-label="Buka project 1">Lihat</a>
+                <a class="project-link" href="#" aria-label="Buka project 1">See More</a>
               </div>
             </article>
 
@@ -141,17 +176,17 @@
                 loading="lazy"
               />
               <div class="project-body">
-                <h3>Portfolio Mini</h3>
+                <h3>Portfolio Web</h3>
                 <p>
-                  Template portofolio personal dengan section About dan Gallery.
-                  Menggunakan CSS Grid.
+                  Personal portfolio template with About and Gallery sections.
+                  Uses CSS Grid.
                 </p>
                 <div class="project-tags">
                   <span class="tag">HTML</span>
                   <span class="tag">CSS Grid</span>
                   <span class="tag">UI</span>
                 </div>
-                <a class="project-link" href="#" aria-label="Buka project 2">Lihat</a>
+                <a class="project-link" href="#" aria-label="Buka project 2">See More</a>
               </div>
             </article>
 
@@ -162,54 +197,53 @@
                 loading="lazy"
               />
               <div class="project-body">
-                <h3>Gallery Produk</h3>
+                <h3>Product Gallery </h3>
                 <p>
-                  Grid card produk (3+) dengan hover effect dan responsive layout.
-                  Fokus pada konsistensi tipografi.
+                  Product grid cards (3+) with hover effects and responsive layout. 
+                  Focus on typographic consistency.
                 </p>
                 <div class="project-tags">
                   <span class="tag">Grid</span>
                   <span class="tag">Responsive</span>
                   <span class="tag">Hover</span>
                 </div>
-                <a class="project-link" href="#" aria-label="Buka project 3">Lihat</a>
+                <a class="project-link" href="#" aria-label="Buka project 3">See More</a>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Contact (opsional, tapi membantu) -->
+      <!-- Contact  -->
       <section id="contact" class="section">
         <div class="container">
           <h2 class="section-title">Contact</h2>
           <p class="section-lead">
-            Kalau ingin kolaborasi atau tanya-tanya, kamu bisa hubungi saya lewat:
+            If you want to collaborate or ask questions, you can contact me via:
           </p>
 
           <div class="contact-box">
-            <p><strong>Email:</strong> <a href="mailto:emailkamu@example.com">emailkamu@example.com</a></p>
-            <p><strong>GitHub:</strong> <a href="#" target="_blank" rel="noopener">github.com/username</a></p>
-            <p><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">linkedin.com/in/username</a></p>
+            <p><strong>Email:</strong> <a href="mailto:berylazzahrastud@gmail.com">berylazzahrastud@gmail.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/BerylazzahraR" target="_blank" rel="noopener">github.com/BerylazzahraR</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/berylazz" target="_blank" rel="noopener">www.linkedin.com/in/berylazz</a></p>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- A. Structure: footer (copyright + social links) -->
+    <!-- copyright + social links -->
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© <span id="year">2025</span> Nama Kamu. All rights reserved.</p>
+        <p>© <span id="year">2025</span> Beryl Azzahra Raffagustifram. All rights reserved.</p>
 
         <div class="social">
-          <a href="#" aria-label="Instagram">Instagram</a>
-          <a href="#" aria-label="LinkedIn">LinkedIn</a>
-          <a href="#" aria-label="GitHub">GitHub</a>
+          <a href="https://www.instagram.com/kulo.beryl" aria-label="Instagram">Instagram</a>
+          <a href="https://www.linkedin.com/in/berylazz" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://github.com/BerylazzahraR" aria-label="GitHub">GitHub</a>
         </div>
       </div>
     </footer>
 
-    <!-- (Opsional) JS kecil hanya untuk tahun, tidak mengganggu “statis” -->
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>

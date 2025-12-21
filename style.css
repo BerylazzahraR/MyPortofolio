@@ -1,6 +1,4 @@
-/* ==========
-   Color Palette (3 warna utama) + base tokens
-   ========== */
+
 :root {
   --primary: #2563eb;      /* Primary */
   --secondary: #111827;    /* Secondary */
@@ -250,9 +248,10 @@ img {
 
 .section-head {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 12px;
+  gap: 8;
   flex-wrap: wrap;
   margin-bottom: 16px;
 }
@@ -280,6 +279,69 @@ img {
   box-shadow: 0 12px 26px rgba(17, 24, 39, 0.06);
 }
 
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.icon-badge {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(37, 99, 235, 0.16);
+  color: var(--primary);
+  flex: 0 0 auto;
+}
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.icon-badge {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(37, 99, 235, 0.16);
+  flex: 0 0 auto;
+}
+
+.card-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+
+.info-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.info-card p + p {
+  margin-top: 8px;
+}
+
+.info-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.info-card p + p {
+  margin-top: 8px;
+}
+
+
 .info-card h3 {
   margin: 0 0 6px;
   font-size: 16px;
@@ -291,12 +353,10 @@ img {
   line-height: 1.7;
 }
 
-/* ==========
-   Projects Grid (CSS Grid wajib untuk gallery)
-   ========== */
+/* Projects Grid  */
 .grid {
   margin-top: 18px;
-  display: grid; /* CSS Grid */
+  display: grid; 
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
@@ -379,6 +439,7 @@ img {
 .contact-box a:hover {
   text-decoration: underline;
 }
+
 
 /* ==========
    Footer
