@@ -14,6 +14,19 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Script pencegah FOUC (flash of unstyled content) saat load tema -->
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme");
+        const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (savedTheme === "dark" || (!savedTheme && systemDark)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
   </head>
 
   <body>
@@ -24,12 +37,32 @@
           <img class="logo-img" src="asset/logo1.png" alt="Logo Beryl Azzahra R" />
           <span class="logo-text">Beryl azzahra R</span>
         </a>
-        <nav class="site-nav" aria-label="Navigasi utama">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <div class="nav-wrapper">
+          <nav class="site-nav" aria-label="Navigasi utama">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Ganti mode gelap/terang" title="Ganti Mode Gelap/Terang">
+            <!-- Moon icon (tampil saat mode terang) -->
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+            </svg>
+            <!-- Sun icon (tampil saat mode gelap) -->
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2"/>
+              <path d="M12 20v2"/>
+              <path d="m4.93 4.93 1.41 1.41"/>
+              <path d="m17.66 17.66 1.41 1.41"/>
+              <path d="M2 12h2"/>
+              <path d="M20 12h2"/>
+              <path d="m6.34 17.66-1.41 1.41"/>
+              <path d="m19.07 4.93-1.41 1.41"/>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -246,6 +279,15 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Theme toggle functionality
+      const themeToggleBtn = document.getElementById("theme-toggle");
+      themeToggleBtn.addEventListener("click", () => {
+        const currentTheme = document.documentElement.getAttribute("data-theme");
+        const nextTheme = currentTheme === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", nextTheme);
+        localStorage.setItem("theme", nextTheme);
+      });
     </script>
   </body>
 </html>
